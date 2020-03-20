@@ -12,10 +12,9 @@ Code and datasets for our preprint [Calibration of Pre-trained Transformers](htt
 }
 ```
 
-<center>
-<img width="40%" src="https://i.imgur.com/5XHm2WF.png">
-<img width="40%" src="https://i.imgur.com/nAop92S.png">
-</center>
+<p align="center">
+    <img width="80%" src="https://i.imgur.com/Bbkc5Ub.png">
+</p>
 
 ## Overview
 
