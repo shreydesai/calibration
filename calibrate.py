@@ -18,6 +18,7 @@ parser.add_argument('--label_smoothing', type=float, default=0., help='label smo
 parser.add_argument('--do_train', action='store_true', default=False, help='enable training')
 parser.add_argument('--do_evaluate', action='store_true', default=False, help='enable evaluation')
 args = parser.parse_args()
+print(args)
 
 
 def load_output(path):
@@ -149,8 +150,9 @@ if args.do_train:
 
     output_dict = {'temperature': best_temp}
 
+    print()
     print('*** training ***')
-    for k, v in results_dict.items():
+    for k, v in output_dict.items():
         print(f'{k} = {v}')
 
 
@@ -183,12 +185,13 @@ if args.do_evaluate:
         'accuracy': accuracy,
         'confidence': avg_conf,
         'temperature': args.temperature,
-        'NLL': avg_nll,
-        'ECE': expected_error,
-        'MCE': max_error,
-        'TCE': total_error,
+        'neg log likelihood': avg_nll,
+        'expected error': expected_error,
+        'max error': max_error,
+        'total error': total_error,
     }
 
+    print()
     print('*** evaluating ***')
     for k, v in output_dict.items():
         print(f'{k} = {v}')

@@ -434,6 +434,8 @@ if args.test_path:
     print(f'test samples = {len(test_dataset)}')
 
 if args.do_train:
+    print()
+    print('*** training ***')
     best_loss = float('inf')
     for epoch in range(1, args.epochs + 1):
         train_loss = train(train_dataset)
@@ -450,6 +452,9 @@ if args.do_train:
 if args.do_evaluate:
     if not os.path.exists(args.ckpt_path):
         raise RuntimeError(f'\'{args.ckpt_path}\' does not exist')
+    
+    print()
+    print('*** evaluating ***')
 
     output_dicts = []
     model.load_state_dict(torch.load(args.ckpt_path))
