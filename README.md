@@ -1,14 +1,14 @@
 
 # Calibration of Pre-trained Transformers
 
-Code and datasets for our preprint [Calibration of Pre-trained Transformers](https://arxiv.org/abs/2003.07892). If you found this project helpful, please consider citing our paper:
+Code and datasets for our EMNLP 2020 paper [Calibration of Pre-trained Transformers](https://arxiv.org/abs/2003.07892). If you found this project helpful, please consider citing our paper:
 
 ```bibtex
-@article{desai-durrett-2020-calibration,
+@inproceedings{desai-durrett-2020-calibration,
   author={Desai, Shrey and Durrett, Greg},
   title={{Calibration of Pre-trained Transformers}},
   year={2020},
-  journal={arXiv preprint arXiv:1907.11692},
+  booktitle={Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)},
 }
 ```
 
